@@ -37,6 +37,7 @@ body{
     font-family: var(--font2);
     background-color: #E0E0E0;;
     margin: auto;
+    overflow-x: hidden;
 }
 
 ul{
@@ -86,6 +87,10 @@ button.btn-nav {
 }
 
 
+.header-nav i{
+    display: none;
+}
+
 
 /*Header*/
 /*nav*/
@@ -100,6 +105,10 @@ nav{
 
 .header-logo,.header-nav{
     padding: 10px;
+}
+
+.header-nav-mobile{
+    display: none;
 }
 
 
@@ -303,6 +312,10 @@ i{
   background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
   }
   
+  #btn-mobile{
+    display: none;
+  }
+
   /* 2 */
 
 /*subtitle*/

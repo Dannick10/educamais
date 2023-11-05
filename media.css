@@ -18,10 +18,25 @@
         font-size: 28px
     }
 
-    nav li,nav button {
-        display: none;
+    #itens{
+            position: absolute;
+            background-color: aliceblue;
+            border-radius: 20px;
+            margin: auto;
+            z-index: 1;    
+            transform: translateX(-100%); 
+           
     }
+
     
+    ul{
+        display: none;
+       
+    }
+
+    .header-nav > i {
+        display: block;
+    }
 
    header{
     flex-direction: column;
@@ -46,6 +61,9 @@
     max-width: 80%;
         
    }
+
+   
+
 
    aside{
     flex-direction: column;
