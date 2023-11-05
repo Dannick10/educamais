@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 300px) and (max-width: 900px) { 
+
+
+    h1{
+        font-size: 42px;
+        font-family: var(--font1);
+    }
+    
+    h2{
+        font-size: 32px;
+        text-align: center;
+        font-family: var(--font1);
+    }
+
+    h3{
+        font-size: 28px
+    }
+
+    nav li,nav button {
+        display: none;
+    }
+    
+
+   header{
+    flex-direction: column;
+    padding: 0;
+   
+   }
+   
+   header .header-container{
+    padding-left: 5%;
+    padding-top: 60px;
+    width: 80%;
+   
+   }
+
+   header .header-container-img{
+    max-width: 100%;
+    
+   
+   }
+
+    header .header-container-img img{
+    max-width: 80%;
+        
+   }
+
+   aside{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+   }
+
+   aside img{
+    width: 80%;
+   
+   }
+
+   aside > button{
+    margin: auto;
+   }
+
+  
+
+   .header-logo img{
+    width: 70%;
+   }
+
+
+   #instruct  p {
+    width: 80%;
+   }
+
+   .instruct-cards{
+    width: 90%;
+    margin: auto;
+   }
+
+   .container-course{
+   padding: 0;
+
+    }
+
+    .cards-course-item{
+        margin: 10px 0;
+
+    }
+ 
+
+
+
+   /*footer*/
+   .footer-journey{
+    width: 70%;
+    height: 80%;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .journey-info {
+    padding-top: 20px;
+   }
+
+   .journey-info p{
+    display: none;
+  
+   }
+
+   .journey-info::after{
+    content: 'Clique no botão abaixo para conversar com um de nossos atendentes.';
+   
+   }
+
+  .journey-info {
+    color: #545252;
+  }
+
+   
+}
+
