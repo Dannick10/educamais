@@ -39,27 +39,27 @@
     }
 
    header{
-    flex-direction: column;
-    padding: 0;
-   
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    margin-bottom: 25%;
    }
    
    header .header-container{
     padding-left: 5%;
-    padding-top: 60px;
+    padding-top: 0px;
     width: 80%;
    
    }
 
    header .header-container-img{
     max-width: 100%;
-    
+   
    
    }
 
     header .header-container-img img{
     max-width: 80%;
-        
+   
    }
 
    
