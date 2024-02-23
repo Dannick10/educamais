@@ -9,19 +9,39 @@
 </head>
 <body>
 
-    <nav id="header-nav">
+    <nav class="nav" role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        <ul id="menu">
+          <li><a href="#header">Inicio</a></li>
+          <li><a href="#category_services">Sobre</a></li>
+          <li><a href="#Book_trip">Cursos</a></li>
+          <li><a href="#testimonials">Instrutores</a></li>
+          <li><a href="#subscribe">Contato</a></li>
+          <button class="btn-nav btnan">LOGIN</button>
+        </ul>
+       </div>
+      </nav>
+
+    <nav id="header-nav" class="navz">
 
             <div class="header-logo">
                 <img src="imagem/Graduation Badge Logo (1) 1.png" alt="">
             </div>
 
+            
+                
           
 
             <div class="header-nav">
-                <i class="fa-solid fa-bars" onclick="clickMenu()"></i>
+
+
                 <ul class="header-item" id="itens">
                     
-                    <li><a href="#header-nav">Home</a></li>
+                    <li><a href="#header-nav">Inicio</a></li>
                     <li><a href="#header-main">Sobre</a></li>
                     <li><a href="#container-course">Cursos</a></li>
                     <li><a href="#instruct">Instrutores</a></li>

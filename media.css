@@ -136,6 +136,10 @@
     color: #545252;
   }
 
+  #menuToggle {
+    display: flex;
+    
+  }
    
 }
 

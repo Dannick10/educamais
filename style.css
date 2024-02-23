@@ -94,7 +94,7 @@ button.btn-nav {
 
 /*Header*/
 /*nav*/
-nav{
+.navz{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,6 +102,7 @@ nav{
     padding: 15px;
     width: 100vw;
 }
+
 
 
 .header-logo,.header-nav{
@@ -417,3 +418,147 @@ i{
     transform: translatex(100px);
 }
 
+.nav{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.nav a,button{
+    font-size: 1.2em;
+}
+
+.nav button{
+    padding: 10px 32px;
+}
+
+#menuToggle {
+display: flex;
+display: none;
+flex-direction: column;
+position: fixed;
+top: 25px;
+right: 25px;
+z-index: 1;
+-webkit-user-select: none;
+user-select: none;
+opacity: 0.9;
+padding: 5px;
+border-radius: 10px;
+
+}
+
+#menuToggle input
+{
+display: flex;
+width: 40px;
+height: 32px;
+position: absolute;
+cursor: pointer;
+opacity: 0;
+z-index: 2;
+}
+
+#menuToggle span
+{
+display: flex;
+width: 29px;
+height: 2px;
+margin-bottom: 5px;
+position: relative;
+background: var(--color2);
+border-radius: 3px;
+z-index: 1;
+transform-origin: 5px 0px;
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-3px, -1px);
+background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+position: absolute;
+display: flex;
+flex-direction: column;
+width: 180px;
+height: 100vh;
+top: -40px;
+box-shadow: 0 0 10px #85888C;
+margin: -50px 0 0 -50px;
+padding: 50px;
+background-color: #F5F6FA;
+-webkit-font-smoothing: antialiased;
+transform-origin: 0% 0%;
+justify-content: space-evenly;
+align-items: center;
+transform: translate(200%, 0);
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+
+#menu li
+{
+padding: 5px 0;
+transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+transform:translate(-40%, 0);
+}
+
+a{
+    position: relative;
+    font-size: 1.2em;
+}
+
+li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 30%;
+    background-color: var(--color2);
+    transition: 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    opacity: 0;
+}
+
+a:hover{
+    color: var(--color2);
+    transition: 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+li a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
