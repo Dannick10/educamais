@@ -435,6 +435,7 @@ i{
 }
 
 #menuToggle {
+ background-color: #4A86D4;
 display: flex;
 display: none;
 flex-direction: column;
@@ -468,7 +469,7 @@ width: 29px;
 height: 2px;
 margin-bottom: 5px;
 position: relative;
-background: var(--color2);
+background: white;
 border-radius: 3px;
 z-index: 1;
 transform-origin: 5px 0px;
@@ -533,7 +534,7 @@ transition-delay: 2s;
 
 #menuToggle input:checked ~ ul
 {
-transform:translate(-40%, 0);
+transform:translate(-60%, 0);
 }
 
 a{
